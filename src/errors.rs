@@ -32,7 +32,7 @@ mod tests {
     #[test]
     fn test_input_error_display() { // Test qui vérifie que le message d'erreur d'une InputError est correctement formaté lorsqu'on utilise la méthode to_string() ou format!() pour afficher l'erreur.
         let err = GameError::InputError("touche invalide".to_string());
-        assert_eq!(format!("{}", err), "Erreur Input: touche pas valide");
+        assert_eq!(format!("{}", err), "Erreur Input: touche invalide");
     }
 
     #[test]
@@ -44,7 +44,7 @@ mod tests {
     #[test]
     fn test_game_logic_error_display() { // Test qui vérifie que le message d'erreur d'une GameLogicError est correctement formaté lorsqu'on utilise la méthode to_string() ou format!() pour afficher l'erreur.
         let err = GameError::GameLogicError("thread panic".to_string());
-        assert_eq!(format!("{}", err), "Erreur game: thread panique");
+        assert_eq!(format!("{}", err), "Erreur game: thread panic");
     }
 
     #[test]
