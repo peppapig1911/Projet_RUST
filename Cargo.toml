@@ -1,0 +1,12 @@
+[package]
+name = "duel_game"
+version = "0.1.0"
+edition = "2021"
+description = "Jeu duel de Tommy ROYER et Christine YEJIN en Rust"
+authors = ["Tommy_Christine"]
+
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+rand = "0.9"
+log = "0.4"
+env_logger = "0.11"
